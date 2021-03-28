@@ -1,0 +1,20 @@
+#!/usr/bin/bash
+
+echo "=============================Starting JavaAutomation Script================================="
+echo "You provided the arguments:" "$@"
+
+#read -p 'Enter application file name: ' filename
+echo
+
+echo "==========Compiling Java Files========"
+echo "Errors: "
+javac *.java
+
+echo "=====Running $@====="
+echo "Output: "
+echo
+java $@
+
+
+echo
+echo "=====Script Complete====="
